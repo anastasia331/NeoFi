@@ -1,0 +1,124 @@
+$color-primary: #9DFF3A;
+$color-dark: #0F0F0F;
+$color-text: #999999;
+$color-title: #E5E5E5;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Alexandria", sans-serif;
+}
+
+.header {
+    background-color: #000;
+    width: 100%;
+    padding: 20px;
+
+    @media (max-width:767px) {
+        .header {
+            padding: 24px
+        }
+    }
+
+    &__container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__wrapper-logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 11px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #fff;
+
+    }
+
+    &__logo {
+        height: 32px;
+        width: 32px;
+    }
+
+    &__menu {
+        width: 18px;
+        height: 12px;
+
+    }
+
+    .actions__link {
+        display: flex;
+        gap: 40px;
+        text-decoration: none;
+    }
+
+    .header__btn {
+        background-color: transparent;
+        border: none;
+        padding: 10px 24px;
+        background-color: $color-primary;
+        border-radius: 40px;
+        color: #000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    .btn {
+        background: transparent;
+        border: none;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (min-width:768px) {
+        .header__menu {
+            display: none;
+        }
+
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 40px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #999999;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        flex-shrink: 0;
+    }
+
+    &__link:hover {
+        color: $color-title ;
+    }
+}
+
+@media (max-width:767px) {
+
+    .actions {
+        display: none;
+    }
+}
