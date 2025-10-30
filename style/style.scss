@@ -193,7 +193,6 @@ body {
         align-items: center;
     }
 }
-
 .btn {
     display: inline-flex;
     align-items: center;
@@ -202,14 +201,12 @@ body {
     border-radius: 40px;
     cursor: pointer;
 }
-
 .btn-primary {
     background-color: $color-primary;
     color: #000;
     font-weight: 400;
     font-size: 18px;
 }
-
 .btn-secondary {
     display: flex;
     gap: 11px;
@@ -217,7 +214,6 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.2);
     padding-left: 18px;
 }
-
 .btn-secondary::before {
     content: '';
     width: 0;
@@ -227,20 +223,17 @@ body {
     border-bottom: 11px solid transparent;
 
 }
-
 .image-container {
     max-width: 100%;
     height: auto;
 
 }
-
 @media (max-width:768px) {
     .container {
         flex-direction: column;
         justify-content: center;
 
     }
-
     .main__decoration-text {
       display: flex;
     font-size: 16px;
@@ -248,29 +241,61 @@ body {
       margin: 0 auto;
       margin-bottom: 16px;
     }
-
     .main__title {
         text-align: center;
         font-size: 40px;
         margin-bottom: 16px;
     }
-
     .main__text {
         text-align: center;
         font-size: 16px;
         margin-bottom: 32px;
     }
-
     .main__actions {
         flex-direction: column;
         gap: 20;
         margin-bottom: 20px;
     }
-
     .decoration__image {
         width: 300px;
         height: 300px;
         justify-content: center;
     }
+}
+// ---------------Логотип--------------------
+.section__logo{
+    background-color: #0f0f0f;
+    max-width: 100%;
+        margin: 0 auto;
+        padding: 0 120px;
+}
+.section__logo-title{
+    text-align: center;
+    color: $color-text;
+    font-weight: 400;
+    font-size: 16px;
+padding: 40px 0;
+}
+.section__logo-list{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 72px;
 
+}
+.section__logos{
+    display: flex;
+    align-items: center;
+    gap:8px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-text;
+    margin-bottom: 40px;
+}
+@media (max-width:768px){
+    .section__logo-list{
+        flex-wrap: wrap;
+        gap:20px;
+    }
 }

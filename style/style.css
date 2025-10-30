@@ -229,4 +229,43 @@ body {
     height: 300px;
     justify-content: center;
   }
+}
+.section__logo {
+  background-color: #0f0f0f;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.section__logo-title {
+  text-align: center;
+  color: #999999;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 40px 0;
+}
+
+.section__logo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+}
+
+.section__logos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #999999;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .section__logo-list {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
