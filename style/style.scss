@@ -417,7 +417,7 @@ body {
 }
 
 /* Медиа-запросы для адаптивности */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .features-grid {
         flex-wrap: wrap;
         justify-content: center;
@@ -429,7 +429,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .future__title {
         font-size: 28px;
         margin-bottom: 16px;
