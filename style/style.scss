@@ -19,3 +19,49 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+.partners {
+    background-color: #0f0f0f;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.partners__title {
+    text-align: center;
+    color: $colorText;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+
+}
+
+.partners__list-item {
+    list-style: none;
+    max-width: 129px;
+    width: 100%;
+}
+svg:hover{
+   filter: drop-shadow(0 0 5px $colorText);
+   transform: scale(1.2);
+}
+
+
+
+@media (max-width:768px) {
+    .partners__list {
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    svg {
+        max-width: 97px;
+    }
+}
