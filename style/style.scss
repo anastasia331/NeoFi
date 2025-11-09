@@ -20,3 +20,68 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+.revolutionary{
+    padding: 80px 0;
+    background-color: $colorDark;
+    text-align: center;
+
+&__decoration-text {
+    color: $colorPrimary;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    border: 1px solid #2e2e2e;
+    padding: 10px 20px;
+    border-radius: 24px;
+    line-height: 17px;
+
+}
+
+&__title {
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    color: $colorTitle;
+    max-width: 878px;
+    margin: 0 auto 20px;
+}
+
+&__text {
+    font-size: 18px;
+    margin: 0 auto 20px;
+    color: $colorText;
+    font-weight: 400;
+    max-width: 644px;
+    font-family: $fontFamily;
+    line-height: 140%;
+}
+
+&__btn{
+    background-color: $colorPrimary;
+    padding: 14px 29px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+&__btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #9DFF3A;
+}
+}
+@media(max-width:767px){
+    .revolutionary{
+        padding: 40px 20px;
+    }
+    .revolutionary__title{
+        font-size: 28px;
+
+    }
+    .revolutionary__text{
+        font-size: 16px;
+    }
+}
