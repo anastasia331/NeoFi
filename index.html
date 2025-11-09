@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
 
     <title>NeoFi</title>
 </head>
@@ -20,15 +21,168 @@
 <body>
     <header>
 
+
     </header>
     <main>
+        <section class="testimonial">
+            <p class="testimonial__decoration-text">Statistics</p>
+            <h2 class="testimonial__title">Trusted by Innovators</h2>
+            <p class="testimonial__text">Secure your digital assets with the peace of mind that comes from knowing you
+                are protected by the best technology in
+                the blockchain space.</p>
 
 
+            <!-- _______________слайдер___________________ -->
+            <!-- Slider main container -->
+            <div class="swiper testimonial__swipper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="innovators">
+                            <p class="innovators__text">“AI streamlines international client coordination by scheduling
+                                emails for
+                                optimal inbox timing.”</p>
+                            <div class="innovators__author">
+                                <div class="innovators__wrapper-photo">
+                                    <img class="photo" src="/img/KathrynMurphy.jpg" alt="Kathryn Murphy">
+                                </div>
+                                <div class="innovators__info">
+                                    <p class="innovators__name">Kathryn Murphy</p>
+                                    <p class="innovators__role">Co-founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------2 слайд-------- -->
+                    <div class="swiper-slide">
+                        <div class="innovators">
+                            <p class="innovators__text">“AI streamlines international client coordination by scheduling
+                                emails for
+                                optimal inbox timing.”</p>
+                            <div class="innovators__author">
+                                <div class="innovators__wrapper-photo">
+                                    <img class="photo" src="/img/EleanorPena.png" alt="Eleanor Pena">
+                                </div>
+                                <div class="innovators__info">
+                                    <p class="innovators__name">Eleanor Pena</p>
+                                    <p class="innovators__role">Co-founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------3 слайд--------- -->
+                    <div class="swiper-slide">
+                        <div class="innovators">
+                            <p class="innovators__text">“AI streamlines international client coordination by scheduling
+                                emails for
+                                optimal inbox timing.”</p>
+                            <div class="innovators__author">
+                                <div class="innovators__wrapper-photo">
+                                    <img class="photo" src="/img/DarrellSteward.jpg" alt="Darrell Steward">
+                                </div>
+                                <div class="innovators__info">
+                                    <p class="innovators__name">Darrell Steward</p>
+                                    <p class="innovators__role">Co-founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------4 слайд--------- -->
+                    <div class="swiper-slide">
+                        <div class="innovators">
+                            <p class="innovators__text">“AI streamlines international client coordination by scheduling
+                                emails for
+                                optimal inbox timing.”</p>
+                            <div class="innovators__author">
+                                <div class="innovators__wrapper-photo">
+                                    <img class="photo" src="/img/BessieCooper.jpg" alt="Bessie Cooper">
+                                </div>
+                                <div class="innovators__info">
+                                    <p class="innovators__name">Bessie Cooper</p>
+                                    <p class="innovators__role">Co-founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------5 слайд--------- -->
+                    <div class="swiper-slide">
+                        <div class="innovators">
+                            <p class="innovators__text">“AI streamlines international client coordination by scheduling
+                                emails for
+                                optimal inbox timing.”</p>
+                            <div class="innovators__author">
+                                <div class="innovators__wrapper-photo">
+                                    <img class="photo" src="/img/BillRitche.jpg" alt="Bill Ritche">
+                                </div>
+                                <div class="innovators__info">
+                                    <p class="innovators__name">Bill Ritche</p>
+                                    <p class="innovators__role">Co-founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------6 слайд--------- -->
+                    <div class="swiper-slide">
+                        <div class="innovators">
+                            <p class="innovators__text">“AI streamlines international client coordination by scheduling
+                                emails for
+                                optimal inbox timing.”</p>
+                            <div class="innovators__author">
+                                <div class="innovators__wrapper-photo">
+                                    <img class="photo" src="/img/AlanTuring.jpg" alt="Alan Turing">
+                                </div>
+                                <div class="innovators__info">
+                                    <p class="innovators__name">Alan Turing</p>
+                                    <p class="innovators__role">Co-founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+
+
+
+
+
+        </section>
 
     </main>
     <footer>
 
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.testimonial__swipper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            observer: true,
+            // observeParents:true,
+            
+           
+            
+
+            
+           
+        }
+    ); 
+
+    </script>
 </body>
 
 </html>
