@@ -20,3 +20,150 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.footer {
+    background-color: #000;
+    padding: 120px 0 40px;
+
+    &__wrapper-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        gap: 92px;
+    }
+
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        column-gap: 11px;
+    }
+
+    &__link {
+        font-size: 14px;
+        color: $colorText;
+        font-weight: 400;
+        line-height: 17px;
+        text-decoration: none;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    &__nav-title {
+        font-family: $fontFamily;
+        color: $colorTitle;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 0 auto 24px;
+    }
+
+    &__nav-items,
+    li {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style: none;
+        
+        
+    }
+        
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+        color: $colorText;
+        text-align: center;
+
+    }
+
+
+
+    // ---------форма-------
+    &__form {
+        width: 100%;
+        max-width: 385px;
+    }
+
+    &__form-title {
+        color: $colorTitle;
+        font-size: 20px;
+        font-family: $fontFamily;
+        line-height: 140%;
+        font-weight: 400;
+        margin-bottom: 20px;
+        max-width: 198px;
+    }
+
+    &__form-group {
+        text-align: left;
+        position: relative;
+
+    }
+
+    &__form-email {
+        background: transparent;
+        border: none;
+        color: $colorText;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        width: 100%;
+        outline: none;
+        border-bottom: 0.5px solid #999;
+        padding: 11.5px 45px 27.5px 0;
+        cursor: pointer;
+    }
+
+    &__form-btn {
+        background-color: $colorPrimary;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:890px) {
+    .footer {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .footer__wrapper-info {
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+        gap: 50px
+    }
+}
+
+@media(max-width:550px) {
+    .footer__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: 50px
+    }
+        .footer__nav-title {
+            margin: 0 auto 12px;
+        }
+}

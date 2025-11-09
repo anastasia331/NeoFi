@@ -13,4 +13,122 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.footer {
+  background-color: #000;
+  padding: 120px 0 40px;
+}
+.footer__wrapper-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 92px;
+}
+.footer__logo-link {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+}
+.footer__link {
+  font-size: 14px;
+  color: #999999;
+  font-weight: 400;
+  line-height: 17px;
+  text-decoration: none;
+}
+.footer__menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+.footer__nav-title {
+  font-family: "Inter", sans-serif;
+  color: #E5E5E5;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0 auto 24px;
+}
+.footer__nav-items,
+.footer li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+.footer__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #999999;
+  text-align: center;
+}
+.footer__form {
+  width: 100%;
+  max-width: 385px;
+}
+.footer__form-title {
+  color: #E5E5E5;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  line-height: 140%;
+  font-weight: 400;
+  margin-bottom: 20px;
+  max-width: 198px;
+}
+.footer__form-group {
+  text-align: left;
+  position: relative;
+}
+.footer__form-email {
+  background: transparent;
+  border: none;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  width: 100%;
+  outline: none;
+  border-bottom: 0.5px solid #999;
+  padding: 11.5px 45px 27.5px 0;
+  cursor: pointer;
+}
+.footer__form-btn {
+  background-color: #9DFF3A;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 890px) {
+  .footer {
+    padding: 40px 20px 20px 20px;
+  }
+  .footer__wrapper-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .footer__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 50px;
+  }
+  .footer__nav-title {
+    margin: 0 auto 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
